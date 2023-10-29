@@ -7,19 +7,22 @@ import org.testng.annotations.Test;
 public class TestNGAnnotations {
 
     @BeforeMethod
-    public void beforeMethod(){
+    public void beforeMethod() {
         System.out.println("i am before method");
     }
+
     @Test
-    public void aTestCase(){
+    public void aTestCase() {
         System.out.println("i am the first test case");
     }
+
     @Test
-    public void bTestCase(){
+    public void bTestCase() {
         System.out.println("i am the second test case");
     }
+
     @AfterMethod
-    public void afterMethod(){
+    public void afterMethod() {
         System.out.println("i am after method");
     }
 
