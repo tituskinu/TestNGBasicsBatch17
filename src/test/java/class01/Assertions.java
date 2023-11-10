@@ -23,7 +23,7 @@ verify that you are able to login into HRMS website
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
-    @Test
+    @Test(groups = "regression")
     public void login(){
         WebElement username = driver.findElement(By.xpath("//input[@name='txtUsername']"));
         username.sendKeys("Admin");
